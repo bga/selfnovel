@@ -1,0 +1,3 @@
+[submodule "libs/browser-require"]
+	path = libs/browser-require
+	url = https://github.com/bga/browser-require

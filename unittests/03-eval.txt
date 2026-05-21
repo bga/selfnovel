@@ -1,0 +1,8 @@
+$foo=0 hello
+  one
+    $foo=1 >two one1
+    >two one2
+  :two two
+    two1
+    ?foo two2
+  three

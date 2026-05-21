@@ -1,0 +1,33 @@
+<head>
+  <title>Quest Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <script>window.cliArgs = ["dom_quest00", "../scenes/arab00.txt"]</script>
+  <script src=../libs/browser-require/require.js></script>
+  <script src=./web.app.js>></script>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-size: 12pt;
+    }
+    body {
+      background-position: top;
+      background-repeat: repeat-x;
+    }
+    .quest-root .answears-text > li {
+      text-decoration: underline dashed;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button id=dom_ctrl_reset>Reset!</button>
+    <button id=dom_ctrl_editToggle>Edit!</button>
+  </div>
+  <div id=dom_quest00 class='quest-root fullscreen'>
+    <div id=question-text class=question-text>Q</div>
+    <ul id=answears-text class=answears-text>T</ul>
+  </div>
+  <textarea id=dom_scriptEdit cols=80 rows=40></textarea>
+</body>

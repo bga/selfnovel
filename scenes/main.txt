@@ -1,0 +1,17 @@
+:start $appleCount=0 Hi. My name is Pinoccio
+  >escape I want to escape from my father
+  >start I want to stay at home
+  ?appleCount>0 Father! I bring apples to you!
+    >start $appleCount=0 Give apples
+
+:escape Go to?
+  Into the forest
+    Wolf want to eat me!
+      >start Escape!
+      >die Oh no!
+  :city Into the city
+    Im hungry!
+      $appleCount+=1 >city Buy apple
+      $appleCount+=1 >city No money
+    >start To father!
+:die You dead with $appleCount apples
